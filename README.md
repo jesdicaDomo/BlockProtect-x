@@ -1,5 +1,5 @@
 # BlockProtect-x
-Command
+Command  
 /blockpe -  ตั้งค่าโพรเทค  
 /shoppt  -  ร้านค้าโพรเทค  
 /spawn   -  กลับ spawn  
