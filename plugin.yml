@@ -1,0 +1,13 @@
+name: BlockProtect
+main: BlockProtect\Main
+api: 3.0.0
+version: 0.1
+author: JessicaDomo
+
+commands:
+  blockpt:
+    description: ตั้งค่าโพรเทค
+  shoppt:
+    description: ร้านค้าโพรเทค
+  spawn:
+    description: กลับ spawn
