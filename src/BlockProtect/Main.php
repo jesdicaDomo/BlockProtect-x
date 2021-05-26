@@ -263,50 +263,50 @@ class Main extends PluginBase implements Listener
 			switch ($result) {
 				case "0";
 					$p = $player;
-					if ($this->eco->myMoney($p) <= 0) {
+					if ($this->eco->myMoney($p) <= 1000) { #ตั้งราคาเช็คเงินในตัวผู้เล่น
 						$p->sendMessage(" มีเงินไม่พอที่จะซื้อ§rโพรเทค  ขนาด§e §f10§6x§f10");
 					} else {
 						$items = Item::get(19, 0, 1);
 						$items->setCustomName("§fโพรเทค  ขนาด§e §f10§6x§f10");
 						$p->getInventory()->addItem($items);
 						$p->sendMessage(Setting::getPerfix() . "ซื้อโพรเทค  ขนาด§e §f10§6x§f10 ");
-						$this->eco->reduceMoney($p, 0);
+						$this->eco->reduceMoney($p, 1000); #ตั้งราคาหักเงินในตัวผู้เล่่น
 					}
 					break;
 				case "1";
 					$p = $player;
-					if ($this->eco->myMoney($p) <= 0) {
+					if ($this->eco->myMoney($p) <= 5000) { #ตั้งราคาเช็คเงินในตัวผู้เล่น
 						$p->sendMessage(" มีเงินไม่พอที่จะซื้อ§rโพรเทค  ขนาด§e §f20§6x§f20");
 					} else {
 						$items = Item::get(49, 0, 1);
 						$items->setCustomName("§fโพรเทค  ขนาด§e §f20§6x§f20");
 						$p->getInventory()->addItem($items);
 						$p->sendMessage(Setting::getPerfix() . "ซื้อโพรเทค  ขนาด§e §f20§6x§f20 ");
-						$this->eco->reduceMoney($p, 0);
+						$this->eco->reduceMoney($p, 5000); #ตั้งราคาหักเงินในตัวผู้เล่่น
 					}
 					break;
 				case "2";
 					$p = $player;
-					if ($this->eco->myMoney($p) <= 0) {
+					if ($this->eco->myMoney($p) <= 10000) { #ตั้งราคาเช็คเงินในตัวผู้เล่น
 						$p->sendMessage(" มีเงินไม่พอที่จะซื้อ§rโพรเทค  ขนาด§e §f30§6x§f30");
 					} else {
 						$items = Item::get(41, 0, 1);
 						$items->setCustomName("§fโพรเทค  ขนาด§e §f30§6x§f30");
 						$p->getInventory()->addItem($items);
 						$p->sendMessage(Setting::getPerfix() . "ซื้อโพรเทค  ขนาด§e §f30§6x§f30 ");
-						$this->eco->reduceMoney($p, 0);
+						$this->eco->reduceMoney($p, 10000); #ตั้งราคาหักเงินในตัวผู้เล่่น
 					}
 					break;
 				case "3";
 					$p = $player;
-					if ($this->eco->myMoney($p) <= 0) {
+					if ($this->eco->myMoney($p) <= 50000) { #ตั้งราคาเช็คเงินในตัวผู้เล่น
 						$p->sendMessage(" มีเงินไม่พอที่จะซื้อ§rโพรเทค  ขนาด§e §f50§6x§f50");
 					} else {
 						$items = Item::get(57, 0, 1);
 						$items->setCustomName("§fโพรเทค  ขนาด§e §f50§6x§f50");
 						$p->getInventory()->addItem($items);
 						$p->sendMessage(Setting::getPerfix() . "ซื้อโพรเทค  ขนาด§e §f50§6x§f50 ");
-						$this->eco->reduceMoney($p, 0);
+						$this->eco->reduceMoney($p, 50000); #ตั้งราคาหักเงินในตัวผู้เล่่น
 					}
 					break;
 			}
